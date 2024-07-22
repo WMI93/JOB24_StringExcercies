@@ -1,5 +1,10 @@
 package com.wmi;
 
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static com.wmi.Main.sop;
+
 public class Solution {
     static String Ex1_ReverseString(String s){
         int i=s.length();
@@ -10,8 +15,27 @@ public class Solution {
         }
         return ss.toString();
     }
+    static String Ex1_ReverseString1(String s){
+        /*
+            return  new StringBuilder(s).reverse().toString();
+         */
+        return Stream.of(s).map(ss->new StringBuilder(s).reverse()).collect(Collectors.joining(" "));
+    }
 
     public static void Ex2_desplayDegit() {
+        int i = 0, j = 0, k = 0, z = 0;
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= 4; j++) {
+                for (k = 1; k <= 4; k++) {
+                    if (i != j && i != k && k != j) {
+                        sop(" " + i + j + k + " || ");
+                        z++;
+                    }
+                }
+                sop("\n");
+            }
+        }
+        sop("z ==" + z);
     }
 
     public static void Ex3_AvailableCharset() {

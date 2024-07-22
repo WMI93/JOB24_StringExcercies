@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     static int choix;
     static Scanner sc = new Scanner(System.in);
-    private static void sop(Object o) {System.out.println(o);}
+    static void sop(Object o) {System.out.println(o);}
     public static void main(String[] args) {
         do {
 
@@ -61,7 +61,6 @@ public class Main {
             case 3:
                 Solution.Ex3_AvailableCharset();
                 sc.next();
-                break;
             case 4:
                 sop("please insert Character ");
                 string = sc.next();
