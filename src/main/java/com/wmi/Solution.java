@@ -1,5 +1,7 @@
 package com.wmi;
 
+import javax.xml.stream.events.Characters;
+import java.nio.charset.Charset;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -39,6 +41,9 @@ public class Solution {
     }
 
     public static void Ex3_AvailableCharset() {
+        for(String s: Charset.availableCharsets().keySet()){
+            sop(" " + s);
+        }
     }
 
     public static String Ex4_CharacterToASCII(String string) {

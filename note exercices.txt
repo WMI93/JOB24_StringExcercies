@@ -1,0 +1,20 @@
+String str = "w3resource.com";
+
+# get code point at index 1 in the string.
+    int val1 = str.codePointAt(1);
+
+# get code point before the character at index 9 in the string.	
+	int val1 = str.codePointBefore(9);
+
+# Count the number of Unicode code points from index 1 to index 10 in the string.
+    int ctr = str.codePointCount(1, 10);
+
+# Write a Java program to compare two strings lexicographically.
+ 	==>use compareTo() method
+ 	==>use compareToIgnoreCase() method ignoreing the case
+
+# compare a given string to the specified character sequence /stringbuffer
+	==>contentEquals() method
+	
+
+
